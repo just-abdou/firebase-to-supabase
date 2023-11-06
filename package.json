@@ -4,17 +4,26 @@
   "description": "Migrate a firebase project to supabase project",
   "main": "index.ts",
   "scripts": {
-    "run": "ts-node index.ts",
+    "start": "ts-node firestore/json2supabase.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mark Burggraf <mark@supabase.io>",
   "license": "ISC",
   "dependencies": {
-    "@supabase/supabase-js": "^1.30.7",
+    "@supabase/supabase-js": "^2.38.4",
+    "@types/uuid": "^9.0.6",
+    "axios": "^1.6.0",
+    "cohere-ai": "^7.1.1",
     "firebase-admin": "^10.0.2",
     "firebase-scrypt": "^2.1.0",
+    "langchain": "^0.0.180",
     "moment": "^2.29.1",
     "pg": "^8.7.1",
-    "stream-json": "^1.7.3"
+    "stream-json": "^1.7.3",
+    "ts-node": "^10.9.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.10.7"
   }
 }
